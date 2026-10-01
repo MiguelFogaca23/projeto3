@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Editoras | Biblioteca</title>
+	<link rel="stylesheet" href="editora.css">
+</head>
+
+<body>
+	<header>
+		<h1>Editoras</h1>
+		<p>Instituições responsáveis pelas publicações</p>
+	</header>
+
+	<main>
+		<section class="panel">
+			<h2>Dados da editora</h2>
+			<div class="form-grid">
+				<label>ID da editora<input id="id" type="number" min="1"></label>
+				<label>Nome<input id="nome" required></label>
+				<label>Cidade<input id="cidade"></label>
+				<label>Site<input id="site" type="url"></label>
+			</div>
+
+			<div class="actions">
+				<button id="procurar">Procurar</button>
+				<button id="inserir">Inserir</button>
+				<button id="alterar" class="secondary" hidden>Alterar</button>
+				<button id="excluir" class="danger" hidden>Excluir</button>
+				<button id="salvar" hidden>Salvar</button>
+				<button id="cancelar" class="secondary" hidden>Cancelar</button>
+			</div>
+
+			<p id="mensagem">Informe um ID e clique em Procurar.</p>
+			<div class="list">
+				<h3>Editoras cadastradas</h3>
+				<div id="lista">Carregando...</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>Biblioteca - DW1 · 2026</footer>
+	<script src="editora.js"></script>
+</body>
+
+</html>

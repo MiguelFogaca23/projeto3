@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Autores | Biblioteca</title>
+	<link rel="stylesheet" href="autor.css">
+</head>
+
+<body>
+	<header>
+		<h1>Autores</h1>
+		<p>Cadastro e consulta do acervo</p>
+	</header>
+
+	<main>
+		<section class="panel">
+			<h2>Dados do autor</h2>
+			<div class="form-grid">
+				<label>ID do autor<input id="id" type="number" min="1"></label>
+				<label>Nome<input id="nome" required></label>
+				<label>Nacionalidade<input id="nacionalidade"></label>
+			</div>
+
+			<div class="actions">
+				<button id="procurar">Procurar</button>
+				<button id="inserir">Inserir</button>
+				<button id="alterar" class="secondary" hidden>Alterar</button>
+				<button id="excluir" class="danger" hidden>Excluir</button>
+				<button id="salvar" hidden>Salvar</button>
+				<button id="cancelar" class="secondary" hidden>Cancelar</button>
+			</div>
+
+			<p id="mensagem">Informe um ID e clique em Procurar.</p>
+			<div class="list">
+				<h3>Autores cadastrados</h3>
+				<div id="lista">Carregando...</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>Biblioteca - DW1 · 2026</footer>
+	<script src="autor.js"></script>
+</body>
+
+</html>

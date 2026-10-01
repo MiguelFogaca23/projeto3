@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Livros | Biblioteca</title>
+	<link rel="stylesheet" href="livro.css">
+</head>
+
+<body>
+	<header>
+		<h1>Livros</h1>
+		<p>Catálogo principal da biblioteca</p>
+	</header>
+
+	<main>
+		<section class="panel">
+			<h2>Dados do livro</h2>
+			<div class="form-grid">
+				<label>ID do livro<input id="id" type="number" min="1"></label>
+				<label>Título<input id="titulo" required></label>
+				<label>Autor<select id="autor"></select></label>
+				<label>Editora<select id="editora"></select></label>
+				<label>ISBN<input id="isbn"></label>
+				<label>Ano de publicação<input id="ano" type="number"></label>
+				<label>Número da edição<input id="edicao" type="number" min="1"></label>
+				<label>Capa<input id="imagem" type="file" accept="image/*"></label>
+				<div class="cover">
+					<img id="capa" alt="Capa do livro">
+				</div>
+			</div>
+
+			<div class="actions">
+				<button id="procurar">Procurar</button>
+				<button id="inserir">Inserir</button>
+				<button id="alterar" class="secondary" hidden>Alterar</button>
+				<button id="excluir" class="danger" hidden>Excluir</button>
+				<button id="salvar" hidden>Salvar</button>
+				<button id="cancelar" class="secondary" hidden>Cancelar</button>
+			</div>
+
+			<p id="mensagem">Informe um ID e clique em Procurar.</p>
+			<div class="list">
+				<h3>Livros cadastrados</h3>
+				<div id="lista">Carregando...</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>Biblioteca - DW1 · 2026</footer>
+	<script src="livro.js"></script>
+</body>
+
+</html>

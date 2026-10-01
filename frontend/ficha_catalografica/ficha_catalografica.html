@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fichas catalográficas | Biblioteca</title>
+	<link rel="stylesheet" href="ficha_catalografica.css">
+</head>
+
+<body>
+	<header>
+		<h1>Fichas catalográficas</h1>
+		<p>Uma ficha para cada livro</p>
+	</header>
+
+	<main>
+		<section class="panel">
+			<h2>Dados da ficha</h2>
+			<div class="form-grid">
+				<label>Livro<select id="livro"></select></label>
+				<label>Assunto<input id="assunto"></label>
+				<label class="full">Palavras-chave<textarea id="palavras"></textarea></label>
+				<label>Descrição física<input id="descricao"></label>
+				<label class="full">Notas<textarea id="notas"></textarea></label>
+			</div>
+
+			<div class="actions">
+				<button id="procurar">Procurar</button>
+				<button id="inserir">Inserir</button>
+				<button id="alterar" class="secondary" hidden>Alterar</button>
+				<button id="excluir" class="danger" hidden>Excluir</button>
+				<button id="salvar" hidden>Salvar</button>
+				<button id="cancelar" class="secondary" hidden>Cancelar</button>
+			</div>
+
+			<p id="mensagem">Selecione um livro e clique em Procurar.</p>
+			<div class="list">
+				<h3>Fichas cadastradas</h3>
+				<div id="lista">Carregando...</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>Biblioteca - DW1 · 2026</footer>
+	<script src="ficha_catalografica.js"></script>
+</body>
+
+</html>
